@@ -2,7 +2,7 @@ import React from 'react'
 
 function Student() {
     const student= ['safik','rahul','adil','safik']
-    const mark=[56,56,78,46,97,86,64,74]
+    const mark=[56,58,78,46,97,86,64,74]
 
     const abc=mark.map(m =><h3>{m = m*2}</h3> )
   return (
@@ -12,10 +12,10 @@ function Student() {
       })}
 
       {
-        mark.map(m=><h5>{m-5}</h5>)
+        abc
       }
       {
-        abc
+        mark.map(m=><h5>{m-5}</h5>)   // m minus 5
       }
     </div>
   )
